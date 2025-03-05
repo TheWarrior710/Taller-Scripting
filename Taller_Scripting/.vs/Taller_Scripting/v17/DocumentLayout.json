@@ -5,6 +5,22 @@
     {
       "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\nodo selector y secuencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\nodo selector y secuencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\nodoraiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\nodoraiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\nodoshojas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\nodoshojas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\nodobt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\nodobt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +30,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NodoBT.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\NodoBT.cs",
+              "RelativeDocumentMoniker": "Taller_Scripting\\NodoBT.cs",
+              "ToolTip": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\NodoBT.cs",
+              "RelativeToolTip": "Taller_Scripting\\NodoBT.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T08:40:57.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NodosHojas.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\NodosHojas.cs",
+              "RelativeDocumentMoniker": "Taller_Scripting\\NodosHojas.cs",
+              "ToolTip": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\NodosHojas.cs",
+              "RelativeToolTip": "Taller_Scripting\\NodosHojas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T08:38:40.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NodoRaiz.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\NodoRaiz.cs",
+              "RelativeDocumentMoniker": "Taller_Scripting\\NodoRaiz.cs",
+              "ToolTip": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\NodoRaiz.cs",
+              "RelativeToolTip": "Taller_Scripting\\NodoRaiz.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T08:37:37.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Nodo Selector y secuencia.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\Nodo Selector y secuencia.cs",
+              "RelativeDocumentMoniker": "Taller_Scripting\\Nodo Selector y secuencia.cs",
+              "ToolTip": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\Nodo Selector y secuencia.cs",
+              "RelativeToolTip": "Taller_Scripting\\Nodo Selector y secuencia.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T08:35:19.744Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +92,7 @@
               "RelativeDocumentMoniker": "Taller_Scripting\\Program.cs",
               "ToolTip": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\Program.cs",
               "RelativeToolTip": "Taller_Scripting\\Program.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAUwHEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-05T07:50:00.865Z",
               "EditorCaption": ""

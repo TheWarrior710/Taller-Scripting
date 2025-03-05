@@ -1,135 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Formats.Asn1;
 using System.Threading;
 
-
-abstract class Node
+namespace Taller_Scripting
 {
-    public abstract bool Execute();
-}
-
-
-abstract class Composite : Node
-{
-    protected List<Node> children = new List<Node>();
-
-    public void AddChild(Node child)
+    class Program
     {
-        children.Add(child);
-    }
-}
-
-class Sequence : Composite
-{
-    public override bool Execute()
-    {
-        foreach (var child in children)
-        {
-            if (!child.Execute())
-            {
-                return false;
-            }
-        }
-        return true;
-    }
-}
-
-
-class Selector : Composite
-{
-    public override bool Execute()
-    {
-        foreach (var child in children)
-        {
-            if (child.Execute())
-            {
-                return true;
-            }
-        }
-        return false;
-    }
-}
-
-
-class Root : Composite
-{
-    public override bool Execute()
-    {
-        return children.Count > 0 && children[0].Execute();
-    }
-}
-
-
-class IsPlayerAtDistance : Node
-{
-    private int distance;
-    public IsPlayerAtDistance(int distance) => this.distance = distance;
-
-    public override bool Execute()
-    {
-        Console.WriteLine($"Verificando distancia al jugador: {distance}");
-        return distance < 5; 
-    }
-}
-
-
-class MoveTo : Node
-{
-    private int x, y, z;
-    public MoveTo(int x, int y, int z) => (this.x, this.y, this.z) = (x, y, z);
-
-    public override bool Execute()
-    {
-        Console.WriteLine($"Moviendo a ({x}, {y}, {z})");
-        return true;
-    }
-}
-
-class Jump : Node
-{
-    public override bool Execute()
-    {
-        Console.WriteLine("Saltando...");
-        return true;
-    }
-}
-
-class Wait : Node
-{
-    private int duration;
-    public Wait(int duration) => this.duration = duration;
-
-    public override bool Execute()
-    {
-        Console.WriteLine($"Esperando {duration} ms...");
-        Thread.Sleep(duration);
-        return true;
-    }
-}
-
-
-class Program
-{
     static void Main()
     {
-        Root root = new Root();
-        Sequence sequence = new Sequence();
+        int distanciaActual = 10;
+        int distanciaValida = 5;
+        int posicionInicial = 10;
+        int posicionObjetivo = 0;
+        int tiempoEspera = 2;
 
-        Selector selector = new Selector();
-        IsPlayerAtDistance checkDistance = new IsPlayerAtDistance(3);
-        MoveTo moveTask = new MoveTo(10, 5, 2);
+     
+        NodoBT nodoEvaluar = new NodoEvaluarDistancia(distanciaActual, distanciaValida);
+        NodoBT nodoMoverse = new NodoMoverse(posicionInicial, posicionObjetivo);
+        NodoBT nodoEsperar = new NodoEsperar(tiempoEspera);
 
-        selector.AddChild(checkDistance);
-        selector.AddChild(moveTask);
+       
+        NodoSelector selector = new NodoSelector();
+        selector.AgregarHijo(nodoEvaluar);
 
-        sequence.AddChild(selector);
-        sequence.AddChild(new Jump());
-        sequence.AddChild(new Wait(1000));
+        NodoSecuencia secuencia = new NodoSecuencia();
+        secuencia.AgregarHijo(selector);
+        secuencia.AgregarHijo(nodoMoverse);
+        secuencia.AgregarHijo(nodoEsperar);
 
-        root.AddChild(sequence);
+  
+        NodoRaiz arbol = new NodoRaiz(secuencia);
 
-        Console.WriteLine("Ejecutando Árbol de Comportamiento...");
-        root.Execute();
+    
+        while (true)
+        {
+            Console.WriteLine("Ejecutando Árbol de Comportamiento...");
+            arbol.Ejecutar();
+        }
     }
 }
-
+}
