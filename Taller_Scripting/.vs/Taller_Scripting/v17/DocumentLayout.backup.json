@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\Program.cs",
+              "RelativeDocumentMoniker": "Taller_Scripting\\Program.cs",
+              "ToolTip": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\Program.cs",
+              "RelativeToolTip": "Taller_Scripting\\Program.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAqwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T07:50:00.865Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

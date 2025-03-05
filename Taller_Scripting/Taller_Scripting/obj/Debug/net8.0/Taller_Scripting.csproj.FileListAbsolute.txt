@@ -1,0 +1,15 @@
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\bin\Debug\net8.0\Taller_Scripting.exe
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\bin\Debug\net8.0\Taller_Scripting.deps.json
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\bin\Debug\net8.0\Taller_Scripting.runtimeconfig.json
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\bin\Debug\net8.0\Taller_Scripting.dll
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\bin\Debug\net8.0\Taller_Scripting.pdb
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\obj\Debug\net8.0\Taller_Scripting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\obj\Debug\net8.0\Taller_Scripting.AssemblyInfoInputs.cache
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\obj\Debug\net8.0\Taller_Scripting.AssemblyInfo.cs
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\obj\Debug\net8.0\Taller_Scripting.csproj.CoreCompileInputs.cache
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\obj\Debug\net8.0\Taller_Scripting.sourcelink.json
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\obj\Debug\net8.0\Taller_Scripting.dll
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\obj\Debug\net8.0\refint\Taller_Scripting.dll
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\obj\Debug\net8.0\Taller_Scripting.pdb
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\obj\Debug\net8.0\Taller_Scripting.genruntimeconfig.cache
+C:\Users\nicol\Documents\GitHub\Taller-Scripting\Taller_Scripting\Taller_Scripting\obj\Debug\net8.0\ref\Taller_Scripting.dll
