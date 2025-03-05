@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\nodo selector y secuencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\nodo selector y secuencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\nodobt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\nodobt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\nodo selector y secuencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\nodo selector y secuencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\nodoraiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\nodoshojas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|c:\\users\\nicol\\documents\\github\\taller-scripting\\taller_scripting\\taller_scripting\\nodobt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32685849-0FFF-4FD9-8A68-39A6129B90B9}|Taller_Scripting\\Taller_Scripting.csproj|solutionrelative:taller_scripting\\nodobt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "NodoBT.cs",
               "DocumentMoniker": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\NodoBT.cs",
               "RelativeDocumentMoniker": "Taller_Scripting\\NodoBT.cs",
@@ -73,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Nodo Selector y secuencia.cs",
               "DocumentMoniker": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\Nodo Selector y secuencia.cs",
               "RelativeDocumentMoniker": "Taller_Scripting\\Nodo Selector y secuencia.cs",
@@ -86,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nicol\\Documents\\GitHub\\Taller-Scripting\\Taller_Scripting\\Taller_Scripting\\Program.cs",
               "RelativeDocumentMoniker": "Taller_Scripting\\Program.cs",
