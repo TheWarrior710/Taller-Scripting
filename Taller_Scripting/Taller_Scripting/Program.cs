@@ -43,10 +43,10 @@ class NodoSecuencia : NodoCompuesto
         {
             if (!hijo.Ejecutar())
             {
-                return false; // Si falla un hijo, la secuencia también falla
+                return false; 
             }
         }
-        return true; // Todos los hijos fueron exitosos
+        return true; 
     }
 }
 
