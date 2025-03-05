@@ -1,145 +1,135 @@
 ﻿using System;
-using System.Threading;
 using System.Collections.Generic;
+using System.Threading;
 
 
-abstract class NodoBT
+abstract class Node
 {
-    public abstract bool Ejecutar();
-}
-
-class NodoRaiz : NodoBT
-{
-    private NodoBT hijo;
-
-    public NodoRaiz(NodoBT hijo)
-    {
-        this.hijo = hijo;
-    }
-
-    public override bool Ejecutar()
-    {
-        return hijo.Ejecutar();
-    }
+    public abstract bool Execute();
 }
 
 
-abstract class NodoCompuesto : NodoBT
+abstract class Composite : Node
 {
-    protected List<NodoBT> hijos = new List<NodoBT>();
+    protected List<Node> children = new List<Node>();
 
-    public void AgregarHijo(NodoBT hijo)
+    public void AddChild(Node child)
     {
-        hijos.Add(hijo);
+        children.Add(child);
     }
 }
 
-
-class NodoSecuencia : NodoCompuesto
+class Sequence : Composite
 {
-    public override bool Ejecutar()
+    public override bool Execute()
     {
-        foreach (var hijo in hijos)
+        foreach (var child in children)
         {
-            if (!hijo.Ejecutar())
+            if (!child.Execute())
             {
-                return false; 
+                return false;
             }
         }
-        return true; 
+        return true;
     }
 }
 
-class NodoSelector : NodoCompuesto
+
+class Selector : Composite
 {
-    private Func<bool> Evaluar;
-
-    public NodoSelector(Func<bool> evaluar)
+    public override bool Execute()
     {
-        this.Evaluar = evaluar;
-    }
-
-    public override bool Ejecutar()
-    {
-        if (!Evaluar()) return false;
-
-        foreach (var hijo in hijos)
+        foreach (var child in children)
         {
-            if (hijo.Ejecutar())
+            if (child.Execute())
             {
-                return true; 
+                return true;
             }
         }
         return false;
     }
 }
 
-class NodoTarea : NodoBT
+
+class Root : Composite
 {
-    private Func<bool> accion;
-
-    public NodoTarea(Func<bool> accion)
+    public override bool Execute()
     {
-        this.accion = accion;
-    }
-
-    public override bool Ejecutar()
-    {
-        return accion();
+        return children.Count > 0 && children[0].Execute();
     }
 }
+
+
+class IsPlayerAtDistance : Node
+{
+    private int distance;
+    public IsPlayerAtDistance(int distance) => this.distance = distance;
+
+    public override bool Execute()
+    {
+        Console.WriteLine($"Verificando distancia al jugador: {distance}");
+        return distance < 5; 
+    }
+}
+
+
+class MoveTo : Node
+{
+    private int x, y, z;
+    public MoveTo(int x, int y, int z) => (this.x, this.y, this.z) = (x, y, z);
+
+    public override bool Execute()
+    {
+        Console.WriteLine($"Moviendo a ({x}, {y}, {z})");
+        return true;
+    }
+}
+
+class Jump : Node
+{
+    public override bool Execute()
+    {
+        Console.WriteLine("Saltando...");
+        return true;
+    }
+}
+
+class Wait : Node
+{
+    private int duration;
+    public Wait(int duration) => this.duration = duration;
+
+    public override bool Execute()
+    {
+        Console.WriteLine($"Esperando {duration} ms...");
+        Thread.Sleep(duration);
+        return true;
+    }
+}
+
 
 class Program
 {
-    static float posicionJugador = 0;
-    static float posicionObjetivo = 10;
-    static float distanciaValida = 2;
-    static float velocidad = 1;
-    static int tiempoEspera = 1000;
-
-    static bool EvaluarDistancia()
-    {
-        return Math.Abs(posicionObjetivo - posicionJugador) <= distanciaValida;
-    }
-
-    static bool MoverseHaciaObjetivo()
-    {
-        if (posicionJugador < posicionObjetivo)
-        {
-            posicionJugador += velocidad;
-        }
-        else if (posicionJugador > posicionObjetivo)
-        {
-            posicionJugador -= velocidad;
-        }
-        Console.WriteLine($"Jugador en posición: {posicionJugador}");
-        return posicionJugador == posicionObjetivo;
-    }
-
-    static bool Esperar()
-    {
-        Console.WriteLine("Esperando...");
-        Thread.Sleep(tiempoEspera);
-        return true;
-    }
-
     static void Main()
     {
-        NodoSelector selectorDistancia = new NodoSelector(EvaluarDistancia);
-        selectorDistancia.AgregarHijo(new NodoTarea(MoverseHaciaObjetivo));
+        Root root = new Root();
+        Sequence sequence = new Sequence();
 
-        NodoSecuencia secuencia = new NodoSecuencia();
-        NodoSelector selectorGeneral = new NodoSelector(() => true);
-        selectorGeneral.AgregarHijo(selectorDistancia);
-        secuencia.AgregarHijo(selectorGeneral);
-        secuencia.AgregarHijo(new NodoTarea(Esperar));
+        Selector selector = new Selector();
+        IsPlayerAtDistance checkDistance = new IsPlayerAtDistance(3);
+        MoveTo moveTask = new MoveTo(10, 5, 2);
 
-        NodoRaiz raiz = new NodoRaiz(secuencia);
+        selector.AddChild(checkDistance);
+        selector.AddChild(moveTask);
 
-        while (!raiz.Ejecutar())
-        {
-            Console.WriteLine("Ejecutando ciclo de comportamiento...");
-        }
-        Console.WriteLine("Objetivo alcanzado.");
+        sequence.AddChild(selector);
+        sequence.AddChild(new Jump());
+        sequence.AddChild(new Wait(1000));
+
+        root.AddChild(sequence);
+
+        Console.WriteLine("Ejecutando Árbol de Comportamiento...");
+        root.Execute();
     }
 }
+
